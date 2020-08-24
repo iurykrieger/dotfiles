@@ -26,8 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PLAT_USER=iury.krieger
-export PLAT_PASSWORD=dWEKlXtxjebkAVe2vfNEusRkt69Pgh
+# Get credentials env vars
+source ~/.credentials
+
+# Sets home folders
 export PLAT_HOME=/home/iury/Workspace/tools/platform-api-tools
 export PATH=$PATH:$PLAT_HOME
 
