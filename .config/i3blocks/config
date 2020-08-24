@@ -25,7 +25,7 @@
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
 command=$SCRIPT_DIR/$BLOCK_NAME
-separator_block_width=15
+separator_block_width=20
 markup=none
 
 # Music Player controller
@@ -46,10 +46,43 @@ interval=once
 signal=10
 #STEP=5%
 
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+# [iface]
+# #IFACE=wlan0
+# color=#00FF00
+# interval=10
+# separator=false
+
+[anachron/blocks/bandwidth]
+instance=wlp2s0;in
+label=⬇️
+interval=1
+min_width=⬇️100Mb
+separator=false
+separator_block_width=2
+
+[anachron/blocks/bandwidth]
+instance=wlp2s0;out
+label=⬆️
+interval=1
+min_width=⬆️100Mb
+separator=false
+separator_block_width=2
+
 # VPN indicator
 [anachron/blocks/vpn]
-label=🛡️
 interval=5
+separator=false
+separator_block_width=2
+
+[contrib/wifi/wifi]
+#INTERFACE=wlp2s0
+instance=wlp2s0
+label=📶
+interval=10
 
 # Memory usage
 [contrib/memory/memory]
@@ -67,31 +100,6 @@ interval=30
 label=🏡
 #DIR=/mnt/data
 interval=30
-
-# Network interface monitoring
-#
-# If the instance is not specified, use the interface used for default route.
-# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-# [iface]
-# #IFACE=wlan0
-# color=#00FF00
-# interval=10
-# separator=false
-# [wifi]
-# #INTERFACE=wlp3s0
-# label=wifi:
-# interval=10
-# separator=false
-# [bandwidth]
-# command=$SCRIPT_DIR/customScripts/blocks/$BLOCK_NAME
-# instance=enp0s31f6;in
-# label=⬇
-# interval=1
-# [bandwidth]
-# command=$SCRIPT_DIR/customScripts/blocks/$BLOCK_NAME
-# instance=enp0s31f6;out
-# label=⬆
-# interval=1
 
 # CPU usage
 [contrib/cpu_usage/cpu_usage]
