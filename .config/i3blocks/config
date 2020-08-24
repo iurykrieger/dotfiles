@@ -53,7 +53,7 @@ interval=5
 
 # Memory usage
 [contrib/memory/memory]
-label=MEM
+label=🐸
 interval=30
 
 # [memory]
