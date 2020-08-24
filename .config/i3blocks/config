@@ -54,7 +54,6 @@ interval=5
 # Memory usage
 [contrib/memory/memory]
 label=MEM
-separator=false
 interval=30
 
 # [memory]
