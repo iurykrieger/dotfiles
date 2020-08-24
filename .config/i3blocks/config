@@ -87,8 +87,9 @@ interval=10
 
 # Memory usage
 [contrib/memory/memory]
-label=🐸
+label=
 interval=30
+color=#FFD000
 
 # [memory]
 # label=SWAP
@@ -101,6 +102,7 @@ interval=30
 label=🏡
 #DIR=/mnt/data
 interval=30
+color=#E4FF00
 
 # CPU usage
 [contrib/cpu_usage/cpu_usage]
