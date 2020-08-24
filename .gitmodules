@@ -1,0 +1,6 @@
+[submodule ".config/i3blocks/contrib"]
+	path = .config/i3blocks/contrib
+	url = git@github.com:iurykrieger/i3blocks-contrib.git
+[submodule ".config/i3blocks/anachron"]
+	path = .config/i3blocks/anachron
+	url = git@github.com:iurykrieger/i3blocks.git
