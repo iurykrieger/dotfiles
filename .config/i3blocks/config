@@ -62,7 +62,7 @@ label=⬇️
 interval=1
 min_width=⬇️100Mb
 separator=false
-separator_block_width=2
+#separator_block_width=2
 
 [anachron/blocks/bandwidth]
 instance=wlp2s0;out
@@ -72,8 +72,9 @@ min_width=⬆️100Mb
 separator=false
 separator_block_width=2
 
-# VPN indicator
-[anachron/blocks/vpn]
+[contrib/nm-vpn/nm-vpn]
+#init_color=#FFFF00
+#on_color=#00FF00
 interval=5
 separator=false
 separator_block_width=2
