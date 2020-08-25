@@ -140,7 +140,8 @@ interval=60
 
 # Date Time
 [contrib/time/time]
-command=date '+%d/%m/%Y %H:%M:%S'
+label=📅
+command=date '+%a.  %d/%m/%Y %H:%M:%S'
 interval=5
 
 [contrib/mm/monitor_manager]
