@@ -3,6 +3,8 @@
 # Install dependencies
 
 # Setup links
-ln -s $(pwd)/.profile ~/.profile
-ln -s $(pwd)/.config/i3 ~/.config/i3
-ln -s $(pwd)/.config/i3blocks ~/.config/i3blocks
+ln -sf $(pwd)/.credentials ~/.credentials
+ln -sf $(pwd)/.profile ~/.profile
+ln -sf $(pwd)/.zshrc ~/.zshrc
+ln -sf $(pwd)/.config/i3 ~/.config/i3
+ln -sf $(pwd)/.config/i3blocks ~/.config/i3blocks
