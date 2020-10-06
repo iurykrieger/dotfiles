@@ -223,6 +223,7 @@ exec i3-config-wizard
 # User commands
 bindsym Mod1+Shift+l exec --no-startup-id i3lock -c 000000
 bindsym Mod1+Shift+b exec --no-startup-id bluetoothctl connect 1C:52:16:A8:96:24
+bindsym Mod1+Ctrl+Shift+b exec --no-startup-id bluetoothctl connect 5C:C6:E9:16:9F:FD
 bindsym Mod1+Shift+v exec --no-startup-id pritunl-client-electron
 bindsym Mod1+Shift+s exec --no-startup-id gnome-control-center sound
 bindsym Mod1+Shift+x exec --no-startup-id gnome-control-center
