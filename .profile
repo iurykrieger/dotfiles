@@ -26,9 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Get credentials env vars
-source ~/.credentials
-
 # Sets home folders
 export PLAT_HOME=/home/iury/Workspace/tools/platform-api-tools
 export PATH=$PATH:$PLAT_HOME
